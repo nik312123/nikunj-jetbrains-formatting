@@ -24,6 +24,8 @@
             <property name="endOfSentenceFormat" value="."/>
             <property name="checkEmptyJavadoc" value="true"/>
         </module>
+        <module name="MissingJavadocMethod"/>
+        <module name="MissingJavadocType"/>
         
         <!-- Checks for Naming Conventions.                  -->
         <!-- See http://checkstyle.sf.net/config_naming.html -->
