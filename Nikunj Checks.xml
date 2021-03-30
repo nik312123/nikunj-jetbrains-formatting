@@ -64,7 +64,6 @@
         </module>
         <module name="IllegalType"/>
         <module name="MagicNumber"/>
-        <module name="NestedTryDepth"/>
         <module name="SimplifyBooleanExpression"/>
         <module name="SimplifyBooleanReturn"/>
         <module name="FinalLocalVariable">
