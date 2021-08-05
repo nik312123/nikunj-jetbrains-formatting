@@ -1,6 +1,10 @@
 <code_scheme name="Nikunj" version="173">
   <option name="RIGHT_MARGIN" value="150" />
   <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="true" />
+  <CsvCodeStyleSettings>
+    <option name="TABULARIZE" value="false" />
+    <option name="WHITE_SPACES_OUTSIDE_QUOTES" value="false" />
+  </CsvCodeStyleSettings>
   <JavaCodeStyleSettings>
     <option name="ANNOTATION_PARAMETER_WRAP" value="1" />
     <option name="LAYOUT_STATIC_IMPORTS_SEPARATELY" value="false" />
