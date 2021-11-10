@@ -8,8 +8,14 @@
     <!-- See http://checkstyle.sf.net/config_misc.html#NewlineAtEndOfFile -->
     <module name="NewlineAtEndOfFile"/>
     
+    <module name="LineLength">
+        <property name="fileExtensions" value="java"/>
+        <property name="max" value="120"/>
+        <!--suppress HttpUrlsUsage -->
+        <property name="ignorePattern" value="^package.*|^import.*|a href|href|http://|https://|ftp://"/>
+    </module>
+    
     <module name="TreeWalker">
-        
         <!-- Checks for Javadoc comments.                     -->
         <!-- See http://checkstyle.sf.net/config_javadoc.html -->
         <module name="JavadocMethod">
@@ -20,8 +26,6 @@
         <module name="JavadocVariable"/>
         <module name="JavadocStyle">
             <property name="severity" value="warning"/>
-            <property name="checkFirstSentence" value="false"/>
-            <property name="endOfSentenceFormat" value="."/>
             <property name="checkEmptyJavadoc" value="true"/>
         </module>
         <module name="MissingJavadocMethod">
@@ -29,6 +33,14 @@
         </module>
         <module name="MissingJavadocType">
             <property name="scope" value="private"/>
+        </module>
+        <module name="NonEmptyAtclauseDescription"/>
+        <module name="InvalidJavadocPosition"/>
+        <module name="JavadocParagraph"/>
+        <module name="AtclauseOrder">
+            <property name="tagOrder" value="@param, @return, @throws, @deprecated"/>
+            <property name="target"
+                      value="CLASS_DEF, INTERFACE_DEF, ENUM_DEF, METHOD_DEF, CTOR_DEF, VARIABLE_DEF"/>
         </module>
         
         <!-- Checks for Naming Conventions.                  -->
@@ -42,6 +54,12 @@
         <module name="ParameterName"/>
         <module name="StaticVariableName"/>
         <module name="TypeName"/>
+        <module name="AbbreviationAsWordInName">
+            <property name="allowedAbbreviationLength" value="2"/>
+            <property name="ignoreFinal" value="false"/>
+            <property name="ignoreStatic" value="false"/>
+            <property name="ignoreStaticFinal" value="true"/>
+        </module>
         
         <!-- Checks for imports                              -->
         <!-- See http://checkstyle.sf.net/config_import.html -->
@@ -70,8 +88,17 @@
         </module>
         <module name="DeclarationOrder"/>
         <module name="OneStatementPerLine"/>
+        <module name="IllegalTokenText">
+            <property name="tokens" value="STRING_LITERAL, CHAR_LITERAL"/>
+            <property name="format"
+                      value="\\u00(09|0(a|A)|0(c|C)|0(d|D)|22|27|5(C|c))|\\(0(10|11|12|14|15|42|47)|134)"/>
+            <property name="message"
+                      value="Consider using special escape sequence instead of octal value or Unicode escaped value."/>
+        </module>
+        <module name="NoFinalizer"/>
+        <module name="OverloadMethodsDeclarationOrder"/>
         
-        <!-- Checks for problematic metrics/style issues     -->
+        <!-- Checks for problematic metrics/style issues      -->
         <!-- See http://checkstyle.sf.net/config_metrics.html -->
         <module name="BooleanExpressionComplexity"/>
         
@@ -81,6 +108,35 @@
         <module name="FinalClass"/>
         <module name="HideUtilityClassConstructor"/>
         <module name="InterfaceIsType"/>
+        <module name="OneTopLevelClass"/>
+        
+        <!-- Checks for whitespace                                        -->
+        <!-- See https://checkstyle.sourceforge.io/config_whitespace.html -->
+        <module name="NoLineWrap">
+            <property name="tokens" value="PACKAGE_DEF, IMPORT, STATIC_IMPORT"/>
+        </module>
+        
+        <!-- Checks for blocks                                        -->
+        <!-- See https://checkstyle.sourceforge.io/config_blocks.html -->
+        <module name="EmptyBlock"/>
+        <module name="NeedBraces"/>
+        
+        <!-- Checks for annotations                                       -->
+        <!-- See https://checkstyle.sourceforge.io/config_annotation.html -->
+        <module name="AnnotationLocation">
+            <property name="allowSamelineMultipleAnnotations" value="false"/>
+            <property name="allowSamelineSingleParameterlessAnnotation" value="false"/>
+            <property name="allowSamelineParameterizedAnnotation" value="false"/>
+            <property name="tokens"
+                      value="CLASS_DEF, INTERFACE_DEF, ENUM_DEF, METHOD_DEF, CTOR_DEF"/>
+        </module>
+        <module name="AnnotationLocation">
+            <property name="allowSamelineMultipleAnnotations" value="true"/>
+            <property name="allowSamelineSingleParameterlessAnnotation" value="true"/>
+            <property name="allowSamelineParameterizedAnnotation" value="true"/>
+            <property name="tokens" value="VARIABLE_DEF"/>
+        </module>
+        <module name="SuppressWarningsHolder"/>
         
         <!-- Miscellaneous other checks.                   -->
         <!-- See http://checkstyle.sf.net/config_misc.html -->
@@ -90,6 +146,13 @@
         <module name="UpperEll"/>
         <module name="IllegalThrows"/>
         <module name="UnnecessaryParentheses"/>
+        <module name="OuterTypeFilename"/>
+        <module name="AvoidEscapedUnicodeCharacters">
+            <property name="allowEscapesForControlCharacters" value="true"/>
+            <property name="allowByTailComment" value="true"/>
+            <property name="allowNonPrintableEscapes" value="true"/>
+        </module>
+        <module name="CommentsIndentation"/>
     </module>
 
 </module>
