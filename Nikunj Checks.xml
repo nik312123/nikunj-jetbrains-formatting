@@ -12,7 +12,7 @@
     <!-- See http://checkstyle.sf.net/config_misc.html#NewlineAtEndOfFile -->
     <module name="NewlineAtEndOfFile"/>
     
-    <!-- Checks that there are no tab characters             -->
+    <!-- Checks that there are no tab characters.            -->
     <!-- See http://checkstyle.org/config_whitespace.html -->
     <module name="FileTabCharacter">
         <property name="eachLine" value="true"/>
@@ -53,8 +53,16 @@
             <property name="target"
                       value="CLASS_DEF, INTERFACE_DEF, ENUM_DEF, METHOD_DEF, CTOR_DEF, VARIABLE_DEF"/>
         </module>
+    
+        <!-- Checks for regular expressions                   -->
+        <!-- See http://checkstyle.sf.net/config_javadoc.html -->
+        <module name="RegexpSinglelineJava">
+            <!-- Matches an at-tag (e.g. @param, @return) that has a description ending in a period -->
+            <property name="format" value="\s+\* @.*\.$"/>
+            <property name="message" value="JavaDoc at-tags should not end with a period, only the summary."/>
+        </module>
         
-        <!-- Checks for Naming Conventions.                  -->
+        <!-- Checks for naming conventions.                  -->
         <!-- See http://checkstyle.sf.net/config_naming.html -->
         <module name="ConstantName"/>
         <module name="LocalFinalVariableName"/>
@@ -72,11 +80,11 @@
             <property name="ignoreStaticFinal" value="true"/>
         </module>
         
-        <!-- Checks for imports                              -->
+        <!-- Checks for imports.                             -->
         <!-- See http://checkstyle.sf.net/config_import.html -->
         <module name="AvoidStarImport"/>
         
-        <!-- Checks for common coding problems               -->
+        <!-- Checks for common coding problems.              -->
         <!-- See http://checkstyle.sf.net/config_coding.html -->
         <module name="EmptyStatement"/>
         <module name="EqualsHashCode"/>
@@ -109,11 +117,11 @@
         <module name="NoFinalizer"/>
         <module name="OverloadMethodsDeclarationOrder"/>
         
-        <!-- Checks for problematic metrics/style issues      -->
+        <!-- Checks for problematic metrics/style issues.     -->
         <!-- See http://checkstyle.sf.net/config_metrics.html -->
         <module name="BooleanExpressionComplexity"/>
         
-        <!-- Checks for class design                         -->
+        <!-- Checks for class design.                        -->
         <!-- See http://checkstyle.sf.net/config_design.html -->
         <module name="DesignForExtension"/>
         <module name="FinalClass"/>
@@ -121,7 +129,7 @@
         <module name="InterfaceIsType"/>
         <module name="OneTopLevelClass"/>
         
-        <!-- Checks for whitespace                                        -->
+        <!-- Checks for whitespace.                                       -->
         <!-- See https://checkstyle.sourceforge.io/config_whitespace.html -->
         <module name="NoLineWrap">
             <property name="tokens" value="PACKAGE_DEF, IMPORT, STATIC_IMPORT"/>
@@ -139,12 +147,12 @@
                      value="WhitespaceAround: ''{0}'' is not preceded with whitespace."/>
         </module>
         
-        <!-- Checks for blocks                                        -->
+        <!-- Checks for blocks.                                       -->
         <!-- See https://checkstyle.sourceforge.io/config_blocks.html -->
         <module name="EmptyBlock"/>
         <module name="NeedBraces"/>
         
-        <!-- Checks for annotations                                       -->
+        <!-- Checks for annotations.                                      -->
         <!-- See https://checkstyle.sourceforge.io/config_annotation.html -->
         <module name="AnnotationLocation">
             <property name="allowSamelineMultipleAnnotations" value="false"/>
