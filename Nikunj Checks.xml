@@ -53,7 +53,7 @@
             <property name="target"
                       value="CLASS_DEF, INTERFACE_DEF, ENUM_DEF, METHOD_DEF, CTOR_DEF, VARIABLE_DEF"/>
         </module>
-    
+        
         <!-- Checks for regular expressions                   -->
         <!-- See http://checkstyle.sf.net/config_javadoc.html -->
         <module name="RegexpSinglelineJava">
@@ -65,8 +65,9 @@
         <!-- Checks for naming conventions.                  -->
         <!-- See http://checkstyle.sf.net/config_naming.html -->
         <module name="ConstantName"/>
-        <module name="LocalFinalVariableName"/>
-        <module name="LocalVariableName"/>
+        <!-- Should be covered by 'Nikunj Inspections.xml' -->
+        <!--<module name="LocalFinalVariableName"/>        -->
+        <!--<module name="LocalVariableName"/>             -->
         <module name="MemberName"/>
         <module name="MethodName"/>
         <module name="PackageName"/>
@@ -102,9 +103,10 @@
         <module name="IllegalType"/>
         <module name="SimplifyBooleanExpression"/>
         <module name="SimplifyBooleanReturn"/>
-        <module name="FinalLocalVariable">
-            <property name="validateEnhancedForLoopVariable" value="true"/>
-        </module>
+        <!-- Should be covered by 'Nikunj Inspections.xml'                      -->
+        <!--<module name="FinalLocalVariable">                                  -->
+        <!--    <property name="validateEnhancedForLoopVariable" value="true"/> -->
+        <!--</module>                                                           -->
         <module name="DeclarationOrder"/>
         <module name="OneStatementPerLine"/>
         <module name="IllegalTokenText">
@@ -172,7 +174,8 @@
         <!-- Miscellaneous other checks.                   -->
         <!-- See http://checkstyle.sf.net/config_misc.html -->
         <module name="ArrayTypeStyle"/>
-        <module name="FinalParameters"/>
+        <!-- Should be covered by 'Nikunj Inspections.xml' -->
+        <!--<module name="FinalParameters"/>               -->
         <module name="TodoComment"/>
         <module name="UpperEll"/>
         <module name="IllegalThrows"/>
