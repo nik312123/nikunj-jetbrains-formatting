@@ -39,6 +39,7 @@
             <property name="checkEmptyJavadoc" value="true"/>
         </module>
         <module name="MissingJavadocMethod">
+            <property name="allowedAnnotations" value=""/>
             <property name="scope" value="private"/>
         </module>
         <module name="MissingJavadocType">
