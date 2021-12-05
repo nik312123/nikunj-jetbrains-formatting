@@ -25,6 +25,12 @@
         <property name="ignorePattern" value="^package.*|^import.*|a href|href|http://|https://|ftp://"/>
     </module>
     
+    <module name="RegexpMultiline">
+        <!-- Matches an at-tag (e.g. @param, @return) that has a description starting with a lowercase letter -->
+        <property name="format" value="^\s+\/\*{2}\s+\*\s+[a-z]"/>
+        <property name="message" value="JavaDoc summaries should start with an uppercase letter."/>
+    </module>
+    
     <module name="TreeWalker">
         <!-- Checks for Javadoc comments.                     -->
         <!-- See http://checkstyle.sf.net/config_javadoc.html -->
@@ -59,7 +65,13 @@
         <module name="RegexpSinglelineJava">
             <!-- Matches an at-tag (e.g. @param, @return) that has a description ending in a period -->
             <property name="format" value="\s+\* @.*\.$"/>
-            <property name="message" value="JavaDoc at-tags should not end with a period, only the summary."/>
+            <property name="message"
+                      value="JavaDoc at-tag descriptions should not end with a period, only the summary."/>
+        </module>
+        <module name="RegexpSinglelineJava">
+            <!-- Matches an at-tag (e.g. @param, @return) that has a description starting with a lowercase letter -->
+            <property name="format" value="^\s+\* @(?:param\s+\S+\s+[a-z]|return\s+[a-z]|throws\s+\S+\s+[a-z])"/>
+            <property name="message" value="JavaDoc at-tags descriptions should start with an uppercase letter."/>
         </module>
         
         <!-- Checks for naming conventions.                  -->
