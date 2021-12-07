@@ -26,9 +26,16 @@
     </module>
     
     <module name="RegexpMultiline">
-        <!-- Matches an at-tag (e.g. @param, @return) that has a description starting with a lowercase letter -->
+        <!-- Matches a summary that has a description starting with a lowercase letter -->
         <property name="format" value="^\s+\/\*{2}\s+\*\s+[a-z]"/>
         <property name="message" value="JavaDoc summaries should start with an uppercase letter."/>
+    </module>
+    
+    <module name="RegexpMultiline">
+        <!-- Matches a summary that has a description starting with a lowercase letter -->
+        <property name="format" value="\}\n[^\S\r\n]*\n^\}"/>
+        <property name="message"
+                  value="There should not be any newlines between the last method and the class closing bracket."/>
     </module>
     
     <module name="TreeWalker">
