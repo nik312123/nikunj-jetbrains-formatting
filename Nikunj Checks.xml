@@ -102,6 +102,7 @@
         <!-- Checks for imports.                             -->
         <!-- See http://checkstyle.sf.net/config_import.html -->
         <module name="AvoidStarImport"/>
+        <module name="AvoidStaticImport"/>
         
         <!-- Checks for common coding problems.              -->
         <!-- See http://checkstyle.sf.net/config_coding.html -->
