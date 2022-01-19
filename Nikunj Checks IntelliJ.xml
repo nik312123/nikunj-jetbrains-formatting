@@ -3,6 +3,8 @@
     "-//Puppy Crawl//DTD Check Configuration 1.3//EN"
     "https://checkstyle.org/dtds/configuration_1_3.dtd">
 
+<!-- Checkstyle file for IDE checking -->
+
 <module name="Checker">
     <property name="charset" value="UTF-8"/>
     
@@ -23,6 +25,19 @@
         <property name="max" value="120"/>
         <!--suppress HttpUrlsUsage -->
         <property name="ignorePattern" value="^package.*|^import.*|a href|href|http://|https://|ftp://"/>
+    </module>
+    
+    <module name="RegexpMultiline">
+        <!-- Matches a summary that has a description starting with a lowercase letter -->
+        <property name="format" value="^\s+\/\*{2}\s+\*\s+[a-z]"/>
+        <property name="message" value="JavaDoc summaries should start with an uppercase letter."/>
+    </module>
+    
+    <module name="RegexpMultiline">
+        <!-- Matches a summary that has a description starting with a lowercase letter -->
+        <property name="format" value="\}\n(?:[^\S\r\n]*\n)+^\}"/>
+        <property name="message"
+                  value="There should not be any newlines between the last method and the class closing bracket."/>
     </module>
     
     <module name="TreeWalker">
@@ -59,7 +74,13 @@
         <module name="RegexpSinglelineJava">
             <!-- Matches an at-tag (e.g. @param, @return) that has a description ending in a period -->
             <property name="format" value="\s+\* @.*\.$"/>
-            <property name="message" value="JavaDoc at-tags should not end with a period, only the summary."/>
+            <property name="message"
+                      value="JavaDoc at-tag descriptions should not end with a period, only the summary."/>
+        </module>
+        <module name="RegexpSinglelineJava">
+            <!-- Matches an at-tag (e.g. @param, @return) that has a description starting with a lowercase letter -->
+            <property name="format" value="^\s+\* @(?:param\s+\S+\s+[a-z]|return\s+[a-z]|throws\s+\S+\s+[a-z])"/>
+            <property name="message" value="JavaDoc at-tags descriptions should start with an uppercase letter."/>
         </module>
         
         <!-- Checks for naming conventions.                  -->
@@ -83,6 +104,7 @@
         <!-- Checks for imports.                             -->
         <!-- See http://checkstyle.sf.net/config_import.html -->
         <module name="AvoidStarImport"/>
+        <module name="AvoidStaticImport"/>
         
         <!-- Checks for common coding problems.              -->
         <!-- See http://checkstyle.sf.net/config_coding.html -->
@@ -140,6 +162,7 @@
             <property name="allowEmptyMethods" value="true"/>
             <property name="allowEmptyTypes" value="true"/>
             <property name="allowEmptyLoops" value="true"/>
+            <property name="allowEmptyCatches" value="true"/>
             <property name="tokens" value="LCURLY, RCURLY"/>
             <message key="ws.notFollowed"
                      value="WhitespaceAround: ''{0}'' is not followed by whitespace. Empty blocks may only be represented as '{}' when not part of a multi-block statement (4.1.3)"/>
@@ -174,7 +197,7 @@
         <module name="ArrayTypeStyle"/>
         <!-- Removed as it is covered by 'Nikunj Inspections.xml' and tries making all parameters final whether or
              not changed -->
-        <module name="FinalParameters"/>
+        <!--<module name="FinalParameters"/>-->
         <module name="TodoComment"/>
         <module name="UpperEll"/>
         <module name="IllegalThrows"/>
@@ -187,5 +210,4 @@
         </module>
         <module name="CommentsIndentation"/>
     </module>
-
 </module>
