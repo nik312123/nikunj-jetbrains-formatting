@@ -1,4 +1,5 @@
 <code_scheme name="Nikunj" version="173">
+  <option name="AUTODETECT_INDENTS" value="false" />
   <CssCodeStyleSettings>
     <option name="HEX_COLOR_UPPER_CASE" value="true" />
     <option name="HEX_COLOR_LONG_FORMAT" value="true" />
@@ -42,6 +43,12 @@
       </value>
     </option>
   </JavaCodeStyleSettings>
+  <Python>
+    <option name="SPACE_AROUND_EQ_IN_NAMED_PARAMETER" value="true" />
+    <option name="SPACE_AROUND_EQ_IN_KEYWORD_ARGUMENT" value="true" />
+    <option name="DICT_NEW_LINE_AFTER_LEFT_BRACE" value="true" />
+    <option name="DICT_NEW_LINE_BEFORE_RIGHT_BRACE" value="true" />
+  </Python>
   <R>
     <option name="SPACE_AROUND_COLON_OPERATOR" value="true" />
     <option name="SPACE_AROUND_EXPONENTIATION_OPERATOR" value="true" />
@@ -223,6 +230,12 @@
   <codeStyleSettings language="Markdown">
     <option name="RIGHT_MARGIN" value="999" />
     <option name="WRAP_ON_TYPING" value="0" />
+  </codeStyleSettings>
+  <codeStyleSettings language="Python">
+    <indentOptions>
+      <option name="CONTINUATION_INDENT_SIZE" value="4" />
+      <option name="KEEP_INDENTS_ON_EMPTY_LINES" value="true" />
+    </indentOptions>
   </codeStyleSettings>
   <codeStyleSettings language="R">
     <option name="KEEP_BLANK_LINES_IN_CODE" value="1" />
