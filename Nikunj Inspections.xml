@@ -65,6 +65,7 @@
     <option name="m_ignoreExpressionsContainingConstants" value="false" />
   </inspection_tool>
   <inspection_tool class="ReplaceAssignmentWithOperatorAssignmentJS" enabled="true" level="WARNING" enabled_by_default="true" />
+  <inspection_tool class="StaticImport" enabled="true" level="WARNING" enabled_by_default="true" />
   <inspection_tool class="TailRecursionJS" enabled="true" level="WARNING" enabled_by_default="true" />
   <inspection_tool class="TextLabelInSwitchStatementJS" enabled="true" level="WARNING" enabled_by_default="true" />
   <inspection_tool class="UnnecessaryQualifierForThis" enabled="true" level="WARNING" enabled_by_default="true" />
