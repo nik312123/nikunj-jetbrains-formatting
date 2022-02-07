@@ -34,9 +34,6 @@
     <option name="LAYOUT_STATIC_IMPORTS_SEPARATELY" value="false" />
     <option name="CLASS_COUNT_TO_USE_IMPORT_ON_DEMAND" value="9999" />
     <option name="NAMES_COUNT_TO_USE_IMPORT_ON_DEMAND" value="9999" />
-    <option name="PACKAGES_TO_USE_IMPORT_ON_DEMAND">
-      <value />
-    </option>
     <option name="IMPORT_LAYOUT_TABLE">
       <value>
         <package name="" withSubpackages="true" static="false" />
@@ -57,6 +54,10 @@
     <option name="SPACE_AROUND_COLON_OPERATOR" value="true" />
     <option name="SPACE_AROUND_EXPONENTIATION_OPERATOR" value="true" />
   </R>
+  <XML>
+    <option name="XML_KEEP_BLANK_LINES" value="1" />
+    <option name="XML_SPACE_INSIDE_EMPTY_TAG" value="false" />
+  </XML>
   <codeStyleSettings language="CSS">
     <option name="KEEP_BLANK_LINES_IN_CODE" value="1" />
     <indentOptions>
