@@ -54,10 +54,6 @@
     <option name="SPACE_AROUND_COLON_OPERATOR" value="true" />
     <option name="SPACE_AROUND_EXPONENTIATION_OPERATOR" value="true" />
   </R>
-  <XML>
-    <option name="XML_KEEP_BLANK_LINES" value="1" />
-    <option name="XML_SPACE_INSIDE_EMPTY_TAG" value="false" />
-  </XML>
   <codeStyleSettings language="CSS">
     <option name="KEEP_BLANK_LINES_IN_CODE" value="1" />
     <indentOptions>
