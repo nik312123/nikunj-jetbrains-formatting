@@ -47,6 +47,77 @@
       </value>
     </option>
   </JavaCodeStyleSettings>
+  <MSSQLCodeStyleSettings version="6">
+    <option name="USE_GENERAL_STYLE" value="false" />
+    <option name="KEYWORD_CASE" value="2" />
+    <option name="IDENTIFIER_CASE" value="1" />
+    <option name="TYPE_CASE" value="3" />
+    <option name="CUSTOM_TYPE_CASE" value="3" />
+    <option name="ALIAS_CASE" value="4" />
+    <option name="QUOTED_IDENTIFIER_CASE" value="1" />
+    <option name="QUOTE_IDENTIFIER" value="1" />
+    <option name="QUERY_EL_COMMA" value="2" />
+    <option name="SUBQUERY_CONTENT" value="4" />
+    <option name="SET_EL_WRAP" value="2" />
+    <option name="SELECT_EL_WRAP" value="2" />
+    <option name="SELECT_USE_AS_WORD" value="1" />
+    <option name="FROM_EL_WRAP" value="2" />
+    <option name="FROM_INDENT_JOIN" value="false" />
+    <option name="WHERE_EL_WRAP" value="2" />
+    <option name="TABLE_OPENING" value="1" />
+    <option name="TABLE_CONTENT" value="2" />
+    <option name="TABLE_CLOSING" value="3" />
+    <option name="SCRIPT_STMT_SEMICOLON_WRAP" value="2" />
+    <option name="IMP_COMMON_KEEP_BLANK_LINES_IN_CODE" value="1" />
+  </MSSQLCodeStyleSettings>
+  <MySQLCodeStyleSettings version="6">
+    <option name="USE_GENERAL_STYLE" value="false" />
+    <option name="KEYWORD_CASE" value="2" />
+    <option name="IDENTIFIER_CASE" value="1" />
+    <option name="TYPE_CASE" value="3" />
+    <option name="CUSTOM_TYPE_CASE" value="3" />
+    <option name="ALIAS_CASE" value="4" />
+    <option name="QUOTED_IDENTIFIER_CASE" value="1" />
+    <option name="QUOTE_IDENTIFIER" value="1" />
+    <option name="QUOTE_TYPE" value="31" />
+    <option name="QUERY_EL_COMMA" value="2" />
+    <option name="SUBQUERY_CONTENT" value="4" />
+    <option name="SET_EL_WRAP" value="2" />
+    <option name="WITH_ALIGN_AS" value="true" />
+    <option name="SELECT_EL_WRAP" value="2" />
+    <option name="SELECT_USE_AS_WORD" value="1" />
+    <option name="FROM_EL_WRAP" value="2" />
+    <option name="FROM_INDENT_JOIN" value="false" />
+    <option name="WHERE_EL_WRAP" value="2" />
+    <option name="TABLE_OPENING" value="1" />
+    <option name="TABLE_CONTENT" value="2" />
+    <option name="TABLE_CLOSING" value="3" />
+    <option name="SCRIPT_STMT_SEMICOLON_WRAP" value="2" />
+    <option name="IMP_COMMON_KEEP_BLANK_LINES_IN_CODE" value="1" />
+  </MySQLCodeStyleSettings>
+  <PostgresCodeStyleSettings version="6">
+    <option name="USE_GENERAL_STYLE" value="false" />
+    <option name="KEYWORD_CASE" value="2" />
+    <option name="IDENTIFIER_CASE" value="1" />
+    <option name="TYPE_CASE" value="3" />
+    <option name="CUSTOM_TYPE_CASE" value="3" />
+    <option name="ALIAS_CASE" value="4" />
+    <option name="QUOTED_IDENTIFIER_CASE" value="1" />
+    <option name="QUOTE_IDENTIFIER" value="1" />
+    <option name="QUERY_EL_COMMA" value="2" />
+    <option name="SUBQUERY_CONTENT" value="4" />
+    <option name="SET_EL_WRAP" value="2" />
+    <option name="SELECT_EL_WRAP" value="2" />
+    <option name="SELECT_USE_AS_WORD" value="1" />
+    <option name="FROM_EL_WRAP" value="2" />
+    <option name="FROM_INDENT_JOIN" value="false" />
+    <option name="WHERE_EL_WRAP" value="2" />
+    <option name="TABLE_OPENING" value="1" />
+    <option name="TABLE_CONTENT" value="2" />
+    <option name="TABLE_CLOSING" value="3" />
+    <option name="SCRIPT_STMT_SEMICOLON_WRAP" value="2" />
+    <option name="IMP_COMMON_KEEP_BLANK_LINES_IN_CODE" value="1" />
+  </PostgresCodeStyleSettings>
   <Python>
     <option name="SPACE_AROUND_EQ_IN_NAMED_PARAMETER" value="true" />
     <option name="SPACE_AROUND_EQ_IN_KEYWORD_ARGUMENT" value="true" />
@@ -57,6 +128,9 @@
     <option name="SPACE_AROUND_COLON_OPERATOR" value="true" />
     <option name="SPACE_AROUND_EXPONENTIATION_OPERATOR" value="true" />
   </R>
+  <SqlCodeStyleSettings version="6">
+    <option name="INDEX_NAME_TEMPLATE" value="{columns}_{unique?u:}idx" />
+  </SqlCodeStyleSettings>
   <codeStyleSettings language="CSS">
     <option name="KEEP_BLANK_LINES_IN_CODE" value="1" />
     <indentOptions>
@@ -245,6 +319,18 @@
     <option name="RIGHT_MARGIN" value="999" />
     <option name="WRAP_ON_TYPING" value="0" />
   </codeStyleSettings>
+  <codeStyleSettings language="MySQL">
+    <indentOptions>
+      <option name="CONTINUATION_INDENT_SIZE" value="4" />
+      <option name="KEEP_INDENTS_ON_EMPTY_LINES" value="true" />
+    </indentOptions>
+  </codeStyleSettings>
+  <codeStyleSettings language="PostgreSQL">
+    <indentOptions>
+      <option name="CONTINUATION_INDENT_SIZE" value="4" />
+      <option name="KEEP_INDENTS_ON_EMPTY_LINES" value="true" />
+    </indentOptions>
+  </codeStyleSettings>
   <codeStyleSettings language="Python">
     <option name="ALIGN_MULTILINE_PARAMETERS" value="false" />
     <option name="ALIGN_MULTILINE_PARAMETERS_IN_CALLS" value="false" />
@@ -288,6 +374,12 @@
     <option name="KEEP_BLANK_LINES_IN_CODE" value="1" />
     <indentOptions>
       <option name="INDENT_SIZE" value="4" />
+      <option name="CONTINUATION_INDENT_SIZE" value="4" />
+      <option name="KEEP_INDENTS_ON_EMPTY_LINES" value="true" />
+    </indentOptions>
+  </codeStyleSettings>
+  <codeStyleSettings language="TSQL">
+    <indentOptions>
       <option name="CONTINUATION_INDENT_SIZE" value="4" />
       <option name="KEEP_INDENTS_ON_EMPTY_LINES" value="true" />
     </indentOptions>
