@@ -6,7 +6,7 @@
   <inspection_tool class="ConditionalExpressionWithIdenticalBranchesJS" enabled="true" level="WARNING" enabled_by_default="true" />
   <inspection_tool class="ConfusingFloatingPointLiteralJS" enabled="true" level="WARNING" enabled_by_default="true" />
   <inspection_tool class="ConfusingPlusesOrMinusesJS" enabled="true" level="WARNING" enabled_by_default="true" />
-  <inspection_tool class="ConstantOnRHSOfComparisonJS" enabled="true" level="WARNING" enabled_by_default="true" />
+  <inspection_tool class="ConstantOnLHSOfComparisonJS" enabled="true" level="WARNING" enabled_by_default="true" />
   <inspection_tool class="DefaultNotLastCaseInSwitchJS" enabled="true" level="WARNING" enabled_by_default="true" />
   <inspection_tool class="DivideByZeroJS" enabled="true" level="WARNING" enabled_by_default="true" />
   <inspection_tool class="DocumentWriteJS" enabled="true" level="WARNING" enabled_by_default="true" />
@@ -62,6 +62,13 @@
   <inspection_tool class="PlatformDetectionJS" enabled="true" level="WARNING" enabled_by_default="true" />
   <inspection_tool class="PointlessBitwiseExpressionJS" enabled="true" level="WARNING" enabled_by_default="true">
     <option name="m_ignoreExpressionsContainingConstants" value="false" />
+  </inspection_tool>
+  <inspection_tool class="PyPep8Inspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+    <option name="ignoredErrors">
+      <list>
+        <option value="W293" />
+      </list>
+    </option>
   </inspection_tool>
   <inspection_tool class="ReplaceAssignmentWithOperatorAssignmentJS" enabled="true" level="WARNING" enabled_by_default="true" />
   <inspection_tool class="StaticImport" enabled="true" level="WARNING" enabled_by_default="true" />
