@@ -20,7 +20,7 @@
   </inspection_tool>
   <inspection_tool class="ForLoopThatDoesntUseLoopVariableJS" enabled="true" level="WARNING" enabled_by_default="true" />
   <inspection_tool class="FunctionNamingConventionJS" enabled="true" level="WARNING" enabled_by_default="true">
-    <option name="m_regex" value="[a-z][A-Za-z0-9]*" />
+    <option name="m_regex" value="#?[a-z][A-Za-z0-9]*" />
     <option name="m_minLength" value="1" />
     <option name="m_maxLength" value="100" />
   </inspection_tool>
