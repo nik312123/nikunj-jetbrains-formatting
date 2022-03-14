@@ -37,7 +37,7 @@
     <option name="REPORT_PARAMETERS" value="true" />
   </inspection_tool>
   <inspection_tool class="LocalVariableNamingConventionJS" enabled="true" level="WARNING" enabled_by_default="true">
-    <option name="m_regex" value="[a-z][A-Za-z]*" />
+    <option name="m_regex" value="#?[a-z][A-Za-z]*" />
     <option name="m_minLength" value="1" />
     <option name="m_maxLength" value="100" />
   </inspection_tool>
