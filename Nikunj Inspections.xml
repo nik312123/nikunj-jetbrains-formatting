@@ -7,6 +7,15 @@
   <inspection_tool class="ConfusingFloatingPointLiteralJS" enabled="true" level="WARNING" enabled_by_default="true" />
   <inspection_tool class="ConfusingPlusesOrMinusesJS" enabled="true" level="WARNING" enabled_by_default="true" />
   <inspection_tool class="ConstantOnLHSOfComparisonJS" enabled="true" level="WARNING" enabled_by_default="true" />
+  <inspection_tool class="CssUnknownProperty" enabled="true" level="WARNING" enabled_by_default="true">
+    <option name="myCustomPropertiesEnabled" value="false" />
+    <option name="myIgnoreVendorSpecificProperties" value="true" />
+    <option name="myCustomPropertiesList">
+      <value>
+        <list size="0" />
+      </value>
+    </option>
+  </inspection_tool>
   <inspection_tool class="DefaultNotLastCaseInSwitchJS" enabled="true" level="WARNING" enabled_by_default="true" />
   <inspection_tool class="DivideByZeroJS" enabled="true" level="WARNING" enabled_by_default="true" />
   <inspection_tool class="DocumentWriteJS" enabled="true" level="WARNING" enabled_by_default="true" />
@@ -17,6 +26,7 @@
     </Languages>
   </inspection_tool>
   <inspection_tool class="DynamicallyGeneratedCodeJS" enabled="true" level="WARNING" enabled_by_default="true" />
+  <inspection_tool class="ES6ConvertLetToConst" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
   <inspection_tool class="ES6TopLevelAwaitExpression" enabled="true" level="ERROR" enabled_by_default="true" />
   <inspection_tool class="EmptyFinallyBlockJS" enabled="true" level="WARNING" enabled_by_default="true" />
   <inspection_tool class="EmptyTryBlockJS" enabled="true" level="WARNING" enabled_by_default="true" />
@@ -91,6 +101,6 @@
   </inspection_tool>
   <inspection_tool class="W3CssValidation" enabled="true" level="WARNING" enabled_by_default="true">
     <option name="myCssVersion" value="css3svg" />
-    <option name="myIgnoreVendorSpecificProperties" value="false" />
+    <option name="myIgnoreVendorSpecificProperties" value="true" />
   </inspection_tool>
 </profile>
