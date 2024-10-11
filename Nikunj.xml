@@ -52,7 +52,7 @@
       </value>
     </option>
   </JavaCodeStyleSettings>
-  <MSSQLCodeStyleSettings version="6">
+  <MSSQLCodeStyleSettings version="7">
     <option name="USE_GENERAL_STYLE" value="false" />
     <option name="KEYWORD_CASE" value="2" />
     <option name="IDENTIFIER_CASE" value="1" />
@@ -75,7 +75,7 @@
     <option name="SCRIPT_STMT_SEMICOLON_WRAP" value="2" />
     <option name="IMP_COMMON_KEEP_BLANK_LINES_IN_CODE" value="1" />
   </MSSQLCodeStyleSettings>
-  <MySQLCodeStyleSettings version="6">
+  <MySQLCodeStyleSettings version="7">
     <option name="USE_GENERAL_STYLE" value="false" />
     <option name="KEYWORD_CASE" value="2" />
     <option name="IDENTIFIER_CASE" value="1" />
@@ -100,7 +100,7 @@
     <option name="SCRIPT_STMT_SEMICOLON_WRAP" value="2" />
     <option name="IMP_COMMON_KEEP_BLANK_LINES_IN_CODE" value="1" />
   </MySQLCodeStyleSettings>
-  <PostgresCodeStyleSettings version="6">
+  <PostgresCodeStyleSettings version="7">
     <option name="USE_GENERAL_STYLE" value="false" />
     <option name="KEYWORD_CASE" value="2" />
     <option name="IDENTIFIER_CASE" value="1" />
@@ -133,7 +133,7 @@
     <option name="SPACE_AROUND_COLON_OPERATOR" value="true" />
     <option name="SPACE_AROUND_EXPONENTIATION_OPERATOR" value="true" />
   </R>
-  <SqlCodeStyleSettings version="6">
+  <SqlCodeStyleSettings version="7">
     <option name="INDEX_NAME_TEMPLATE" value="{columns}_{unique?u:}idx" />
   </SqlCodeStyleSettings>
   <TypeScriptCodeStyleSettings version="0">
@@ -230,6 +230,8 @@
     <option name="RIGHT_MARGIN" value="120" />
     <option name="LINE_COMMENT_AT_FIRST_COLUMN" value="false" />
     <option name="BLOCK_COMMENT_AT_FIRST_COLUMN" value="false" />
+    <option name="LINE_COMMENT_ADD_SPACE" value="true" />
+    <option name="LINE_COMMENT_ADD_SPACE_ON_REFORMAT" value="true" />
     <option name="KEEP_FIRST_COLUMN_COMMENT" value="false" />
     <option name="KEEP_CONTROL_STATEMENT_IN_ONE_LINE" value="false" />
     <option name="KEEP_BLANK_LINES_IN_DECLARATIONS" value="1" />
